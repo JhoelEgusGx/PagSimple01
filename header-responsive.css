@@ -1,0 +1,85 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: rgb(33, 32, 32);
+}
+
+nav ul li a{
+    text-decoration: none;   
+    color: white;
+    display: block;
+    padding: 30px 25px;
+}
+
+nav ul li a:hover{
+    color: yellow;
+    background: rgba(123, 158, 255, 0.3);
+}
+
+
+/* Estilos básicos */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  background: rgb(1, 43, 213);
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Botón hamburguesa oculto en pantallas grandes */
+.menu-btn {
+    display: none;       /* Oculta el botón hamburguesa en escritorio */
+    font-size: 24px;     /* Tamaño del icono ☰ */
+    background: none;    /* Sin fondo */
+    border: none;        /* Sin borde */
+    color: white;        /* Color blanco */
+    cursor: pointer;     /* Cursor de mano al pasar */
+    
+    background: rgb(1, 43, 213);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* ----- RESPONSIVO ----- */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;         /* Oculta el menú por defecto en móviles */
+    flex-direction: column;/* Pone el menú en columna */
+    background: rgb(1, 43, 213);      /* Fondo azul */
+    position: absolute;    /* Lo posiciona flotante */
+    top: 75px;              /* Lo baja debajo del header */
+    right: 0;              /* Alineado a la derecha */
+    width: 200px;          /* Ancho fijo */
+    padding: 10px;         /* Espaciado interno */
+    
+    border-radius: 0px 0px 0px 10px;
+  }
+
+  nav ul.show {
+    display: flex;         /* Muestra el menú cuando se active con JS */
+  }
+
+  .menu-btn {
+    display: block;        /* Muestra el botón hamburguesa */
+  }
+}

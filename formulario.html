@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="header-responsive.css" />
+  <title>Login</title>
+</head>
+<body class="bg-slate-200 min-h-screen flex flex-col">
+
+  <!-- Header siempre arriba -->
+  <header>
+    <h1 class="font-bold text-3xl">Egus-Tech</h1>
+    <nav id="nav">
+      <button id="menu-btn" class="menu-btn">☰</button>
+      <ul id="menu" class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+        <li><a href="catalogo.html">Catalogo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main centrado -->
+  <main class="flex flex-1 items-center justify-center">
+    <form class="bg-white flex flex-col rounded-lg shadow-lg m-4 w-80">
+      <h2 class="bg-blue-700 rounded-t-lg p-4 text-white text-2xl font-bold text-center">
+        Iniciar Sesión
+      </h2>
+
+      <div class="flex flex-col p-6 space-y-4">
+        <label class="font-semibold text-gray-700">
+          Usuario:
+          <input type="text" placeholder="Ingrese usuario"
+            class="mt-1 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </label>
+
+        <label class="font-semibold text-gray-700">
+          Contraseña:
+          <input type="password" placeholder="Ingrese contraseña"
+            class="mt-1 w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </label>
+
+        <button type="submit"
+          class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded transition">
+          Ingresar
+        </button>
+      </div>
+    </form>
+  </main>
+<script src="header.js"></script>
+</body>
+</html>

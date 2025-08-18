@@ -1,0 +1,159 @@
+main{
+    display: flex;
+    color: white;
+   
+}
+/*  DATOS PERSONALES    */
+#datos-cv{
+    background: rgba(239, 238, 238, 0.037);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    min-height: 100vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 250px;
+}
+#nombre-img{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 35px;
+    color: black;
+    padding: 15px;
+}
+
+.item-ul{
+    list-style: none;
+    justify-items: flex-start;
+    
+}
+
+.item-ul li{
+    margin-bottom: 18px;
+    
+}
+.item-ul-ul{
+    list-style: none;
+    justify-items: flex-start;
+    padding-left: 30px;
+    font-size: 15px;
+    margin: 0px;
+    padding: 10px 0px 0px 30px;
+}
+
+.item-ul li i{
+    margin-right:10px;
+}
+
+
+.bloque{
+    background: rgba(206, 214, 224, 0.367);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin: 15px;
+    font-size: 25px;
+}
+
+
+
+/*  HISTORIA    */
+#historia-vc{
+    background:rgba(25, 178, 255, 0.475);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    min-height: 100vh;
+    width: 65%;
+}
+
+#presentacion p{
+    
+    text-align: justify;
+    padding: 10px 30px;
+    background: rgba(25, 178, 255, 0.147);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+.estudios-cv ul {
+    list-style-type: disc;      /* Tipo de viñeta: puedes poner square, circle, etc. */
+    padding-left: 20px;         /* Controla el sangrado de toda la lista */
+}
+
+.estudios-cv ul ul {
+    list-style-type: circle;    /* Igualar el estilo de la lista anidada */
+    padding-left: 20px;         /* Sangrado adicional para sublista */
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin-bottom: 15px;
+    align-items: center;
+    background: rgba(25, 178, 255, 0.147);
+    border-radius: 15px;
+    text-align: justify;
+}
+
+.columna1{
+    width: 60%;
+    flex-direction: column;
+}
+
+.columna2{
+    width: 25%;
+}
+
+.columna3{
+    
+}
+
+
+/* Estilos para pantallas pequeñas (tablets y móviles) */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #datos-cv,
+    #historia-vc {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    img {
+        width: 180px;
+    }
+
+    .bloque {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    #presentacion p {
+        padding: 10px 15px;
+    }
+
+    .contenido {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .columna1 {
+        width: 100%;
+    }
+}

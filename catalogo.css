@@ -1,0 +1,94 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columnas iguales */
+  gap: 10px; /* espacio entre columnas y filas */
+}
+
+.item {
+  background: lightblue;
+  padding: 20px;
+}
+
+
+.contenido{
+  background: rgba(0, 0, 255, 0.116);
+  margin: 10px;
+  border-radius: 15px;
+  min-height: 100vh;
+}
+
+.contenido h2{
+  background: rgb(124, 37, 255);
+  border-radius: 15px 15px 0px 0px;
+  padding: 15px;
+  color: white;
+  width: 100
+}
+
+.grid-4{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+.card-game{
+  background: rgba(0, 0, 0, 0.186);
+  border-radius: 15px;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+  .card-game img{
+    border-radius: 15px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+
+  }
+
+  .card-game ul{
+    list-style: none;
+    
+  }
+
+  .card-game ul li{
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .card-game img:hover{
+    transform: scale(1.07);
+  }
+
+.descarga{
+    background: rgb(124, 37, 255);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  .descarga:hover{
+    background: rgba(124, 37, 255, 0.252);
+    transform: scale(1.05);
+  }
+
+
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: 1fr 1fr; /* 2 columnas en tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-4 {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+  }
+}
